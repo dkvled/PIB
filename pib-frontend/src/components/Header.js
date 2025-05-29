@@ -14,8 +14,8 @@ function Header() {
       {/* 네비게이션 */}
       <nav className="header__nav">
         <Link to="/community" className="header__link">커뮤니티</Link>
-        <Link to="/map" className="header__link">지도</Link>
-        <Link to="/shop" className="header__link">쇼핑</Link>
+        <Link to="/dog" className="header__link">강아지</Link>
+        <Link to="/cat" className="header__link">고양이</Link>
       </nav>
 
       <div className="header__auth">

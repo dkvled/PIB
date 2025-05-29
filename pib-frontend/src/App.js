@@ -6,8 +6,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Community from './pages/Community';
-import Map from './pages/Map';
-import Shop from './pages/Shop';
+import Dog from './pages/Dog';
+import Cat from './pages/Cat';
 import PopularPosts from './pages/PopularPosts';
 import MyPosts from './pages/MyPosts';
 import WritePost from './pages/WritePost';
@@ -25,8 +25,8 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/writepost" element={<WritePost />} />
           <Route path="/postview" element={<PostView />} />
-          <Route path="/map" element={<Map />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/dog" element={<Dog />} />
+          <Route path="/cat" element={<Cat />} />
           <Route path='/login' element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/popular-posts' element={<PopularPosts />} />

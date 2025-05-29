@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import '../styles/PostView.css';
 import { FaHeart, FaRegComment } from 'react-icons/fa';
 import background from '../assets/background.png'
+import dog1 from '../assets/dog1.JPEG'
+import dog2 from '../assets/dog2.JPEG'
+import dog3 from '../assets/dog3.JPEG'
+import dog4 from '../assets/dog4.JPEG'
+import dog5 from '../assets/dog5.JPEG'
+import dog6 from '../assets/dog6.JPEG'
+
 
 function PostView() {
   const [liked, setLiked] = useState(false);
@@ -9,13 +16,13 @@ function PostView() {
   const [newComment, setNewComment] = useState('');
   const [comments, setComments] = useState([
     {
-      name: '이름',
-      date: '2025년 7월 26일 09:17',
+      name: 'PIB1',
+      date: '2025년 5월 29일 00:03',
       text: '댓글댓글댓글',
     },
     {
-      name: '이름',
-      date: '2025년 7월 26일 09:17',
+      name: 'PIB2',
+      date: '2025년 5월 29일 00:04',
       text: '댓글댓글댓글',
     },
   ]);
@@ -37,13 +44,8 @@ function PostView() {
     setNewComment('');
   };
 
-  const images = [
-    '/assets/img1.jpg',
-    '/assets/img2.jpg',
-    '/assets/img3.jpg',
-    '/assets/img4.jpg',
-    '/assets/img4.jpg',
-  ];
+const images = [dog1, dog2, dog3, dog4, dog5, dog6];
+
 
   return (
     <div   
@@ -58,8 +60,8 @@ function PostView() {
           <div className="post-view-container">
           <div className="post-header">
             <p className="meta-line">
-              <span className="author">작성자</span>
-              <span className="date">7월 26일</span>
+              <span className="author">PIB</span>
+              <span className="date">5월 29일</span>
             </p>
             <h2 className="title">제목</h2>
             <p className="content">

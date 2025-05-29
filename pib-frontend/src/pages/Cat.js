@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Community() {
+function Cat() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -104,7 +104,7 @@ const contents = [
 
       <div className= "community-wrapper">
         <div className="community-container" >
-          <h2 className="board-title">커뮤니티 게시판</h2>
+          <h2 className="board-title">고양이 게시판</h2>
 
           <div className="search-bar">
             <input
@@ -138,7 +138,7 @@ const contents = [
             </label>
           </div>
 
-           <div className="post-header">
+          <div className="post-header">
             <div className="post-header-left">내용</div>
             <div className="post-header-right">
               <div>날짜</div>
@@ -188,4 +188,4 @@ const contents = [
   );
 }
 
-export default Community;
+export default Cat;

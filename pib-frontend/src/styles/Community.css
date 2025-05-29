@@ -56,28 +56,32 @@
   accent-color: #f97316;
 }
 
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 10px;
+  font-weight: bold;
   font-size: 14px;
-  border-top: 1px solid #f97316;
-  border-bottom: 1px solid #f97316;
+  border-top: 2px solid #f97316;
+  border-bottom: 2px solid #f97316;
   margin-top: 20px;
 }
 
 .post-header-left {
+  margin-left: 200px;
   flex: 1;
   text-align: left;
 }
 
 .post-header-right {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   min-width: 200px;
   justify-content: flex-end;
   color: #222;
+  margin-left: 565px;
 }
 
 
@@ -90,7 +94,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10px;
+  padding: 15px 15px;
+  padding-right: 35px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -105,10 +110,17 @@
 
 
 
-.post-title {
+.post-title-link {
   font-weight: bold;
   margin-bottom: 5px;
+  color: #000;
+  text-decoration: none;
 }
+
+.post-title:hover {
+  color: #f97316; /* 선택 */
+}
+
 
 .post-content {
   font-size: 14px;
