@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Community.css';
 import pibLogo from '../assets/piblogo.png';
 import background from '../assets/background.png'
-import { Link } from 'react-router-dom';
-
-
+import { Link, useNavigate } from 'react-router-dom';
 
 function Cat() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -12,6 +10,7 @@ function Cat() {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortType, setSortType] = useState('latest');
   const postsPerPage = 8;
+  const navigate = useNavigate();
 
 const titles = [
   '강아지가 밥을 안 먹어요', '산책 나가면 자꾸 멈춰요', '배변 훈련이 안 돼요', '사료 추천 좀 해주세요', '강아지가 자꾸 짖어요',
@@ -114,7 +113,7 @@ const contents = [
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="search-button" onClick={handleSearch}>검색</button>
-            <Link to="/writepost"><button className="write-button">글쓰기</button></Link>
+            <button className="write-button" onClick={() => navigate('/writepost', { state: { returnTo: '/cat' } })}>글쓰기</button>
           </div>
 
           <div className="sort-options">
